@@ -1,0 +1,123 @@
+.calendar-page {
+  padding: 20px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.calendar-header button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.calendar-header button:hover {
+  color: white;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.calendar-cell {
+  padding: 10px;
+  border: 2px solid beige;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+}
+.calendar-cell span {
+  font-weight: bolder;
+  font-size: 1.2em;
+}
+.calendar-cell:hover {
+  background-color: #f0f0f0;
+  color: black;
+}
+
+.calendar-cell.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+.order-count {
+  display: block;
+  font-size: 0.8rem;
+  border: 2px dotted beige;
+  margin-top: 16px;
+}
+.order-count:hover {
+  border: 2px dotted black;
+}
+
+.order-card {
+  border: 5px solid blue;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  max-width: 30vw;
+}
+
+.order-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.order-card ul {
+  padding: 0;
+  margin-left: 16px;
+}
+
+.order-card p {
+  margin: 5px 0;
+}
+
+.order-card ul li {
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .calendar {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .calendar-cell {
+    padding: 5px;
+  }
+
+  .calendar-cell span {
+    font-size: 1em;
+  }
+
+  .order-count {
+    font-size: 0.7rem;
+    margin-top: 8px;
+  }
+
+  .order-card {
+    max-width: 70vw;
+  }
+
+  .order-card h2 {
+    font-size: 1rem;
+  }
+
+  .order-card ul {
+    margin-left: 10px;
+  }
+
+  .order-card p {
+    margin: 3px 0;
+  }
+}
