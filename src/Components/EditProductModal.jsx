@@ -63,7 +63,7 @@ function EditProductModal({ isOpen, onClose, product, onEdit }) {
                   onChange={(e) => setStockQuantity(e.target.value)}
                   required
                 />
-                <button type="submit">Edit Product</button>
+                <button type="submit">Update</button>
               </form>
             </div>
           </div>

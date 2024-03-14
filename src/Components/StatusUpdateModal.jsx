@@ -68,7 +68,7 @@ function StatusUpdateModal({ isOpen, onClose, onUpdateStatus }) {
                   />
                   Delivered
                 </label>
-                <button type="submit">Update Status</button>
+                <button type="submit">Update</button>
               </form>
             </div>
           </div>

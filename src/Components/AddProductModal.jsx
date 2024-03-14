@@ -65,7 +65,7 @@ function AddProductModal({ isOpen, onClose, onAdd }) {
                   onChange={(e) => setStockQuantity(e.target.value)}
                   required
                 />
-                <button type="submit">Add Product</button>
+                <button type="submit">Save</button>
               </form>
             </div>
           </div>
